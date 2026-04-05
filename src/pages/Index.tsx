@@ -4,33 +4,23 @@ import Icon from "@/components/ui/icon";
 const MEMBERS = [
   {
     id: 1,
-    name: "Алина Соколова",
-    role: "Художественный руководитель",
-    style: "Современная хореография",
-    bio: "Алина основала группу NOVA в 2018 году после 12 лет профессиональных выступлений в Москве и Берлине. Её стиль — слияние контемпорари с элементами театра движения.",
-    years: "12 лет опыта",
+    name: "Мария Магола",
+    role: "Участница дуэта",
+    style: "Любительские танцы / K-pop",
+    bio: "Мария родилась 11 мая 2009 года. Танцует уже почти 10 лет — начинала в группе «Микс» под руководством Н.В. Волковой. В конце 2023 года вместе с Дарьей основала дуэт «Он-лайн». Участвует в конкурсах, составляет собственные хореографии и покоряет сцены.",
+    years: "Род. 11.05.2009",
     img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/40f73bbc-9206-4350-a48d-b7afb0ee01ec.jpg",
-    tag: "ОСНОВАТЕЛЬ",
+    tag: "ДУЭТ",
   },
   {
     id: 2,
-    name: "Дмитрий Волков",
-    role: "Ведущий танцор",
-    style: "Hip-hop / Breakdance",
-    bio: "Чемпион России по брейк-дансу 2020 года. Дмитрий привносит в постановки группы уличную энергию и акробатическую технику, создавая невероятный контраст со сценическим стилем.",
-    years: "8 лет опыта",
-    img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/7258f76a-7238-42eb-a680-8bf7e2bc59be.jpg",
-    tag: "ЧЕМПИОН",
-  },
-  {
-    id: 3,
-    name: "Мария Лебедева",
-    role: "Солистка",
-    style: "Балет / Джаз-фанк",
-    bio: "Выпускница Академии Русского балета им. Вагановой. Мария соединяет академическую строгость классики с живой экспрессией джаза, создавая собственный неповторимый язык движения.",
-    years: "10 лет опыта",
+    name: "Дарья Деткова",
+    role: "Участница дуэта",
+    style: "Любительские танцы / Авторская хореография",
+    bio: "Дарья родилась 11 мая 2006 года. Вместе с Марией они — настоящий творческий тандем. Прошла путь от группы «Микс» до собственного дуэта. В 2024 году дебютировала с танцем BLACKPINK, в 2025 представила авторскую хореографию на конкурсе «Подари минуту радости».",
+    years: "Род. 11.05.2006",
     img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/14baa2e7-5658-4d85-b7f6-bb52e1849f12.jpg",
-    tag: "СОЛИСТКА",
+    tag: "ДУЭТ",
   },
 ];
 
@@ -62,7 +52,7 @@ const GALLERY = [
   },
 ];
 
-const MARQUEE_WORDS = ["ДВИЖЕНИЕ", "ЭНЕРГИЯ", "РИТМ", "СТРАСТЬ", "NOVA", "ТАНЕЦ", "ИСКУССТВО", "СЦЕНА"];
+const MARQUEE_WORDS = ["ДВИЖЕНИЕ", "ЭНЕРГИЯ", "РИТМ", "ОН-ЛАЙН", "БИРЮСИНСК", "ТАНЕЦ", "НАДЕЖДА", "СЦЕНА"];
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -118,7 +108,7 @@ function Nav({ active, setActive }: { active: string; setActive: (s: string) => 
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-black/90 backdrop-blur-md border-b border-white/5" : ""}`}>
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         <button onClick={() => scrollTo("hero")} className="font-display text-2xl font-bold tracking-[0.3em] text-gold">
-          NOVA
+          ОН-ЛАЙН
         </button>
         <div className="hidden md:flex items-center gap-10">
           {links.map(l => (
@@ -151,16 +141,16 @@ function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pb-24 pt-32">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-          <p className="font-mono text-xs tracking-[0.4em] text-gold uppercase mb-6">Танцевальная группа · Основана 2018</p>
+          <p className="font-mono text-xs tracking-[0.4em] text-gold uppercase mb-6">Танцевальный дуэт · г. Бирюсинск · с 2023</p>
         </div>
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-          <h1 className="font-display text-[clamp(80px,15vw,200px)] font-bold leading-none tracking-[-0.02em] text-white">
-            NOVA
+          <h1 className="font-display text-[clamp(60px,12vw,180px)] font-bold leading-none tracking-[-0.02em] text-white">
+            ОН-ЛАЙН
           </h1>
         </div>
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
           <p className="font-display text-[clamp(18px,3vw,36px)] font-light italic text-white/60 mt-2 mb-10 max-w-lg">
-            Когда тело становится языком, а сцена — вселенной
+            Две девушки. Одна страсть. Бесконечный танец.
           </p>
         </div>
         <div className="opacity-0 animate-fade-up flex flex-wrap gap-4" style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}>
@@ -208,21 +198,21 @@ function About() {
       <div className="grid md:grid-cols-2 gap-20 items-center">
         <div>
           <p className={`font-mono text-xs tracking-[0.4em] text-gold uppercase mb-4 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            О группе
+            О дуэте
           </p>
           <h2 className={`font-display text-[clamp(40px,6vw,80px)] font-bold leading-none text-white mb-8 transition-all duration-700 delay-100 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            МЫ — <br /><span className="text-gold italic">ДВИЖЕНИЕ</span>
+            МЫ — <br /><span className="text-gold italic">ОН-ЛАЙН</span>
           </h2>
           <div className={`section-line mb-8 transition-all duration-1000 delay-200 ${inView ? "opacity-100" : "opacity-0"}`} />
           <p className={`font-body text-white/60 leading-relaxed text-lg mb-6 transition-all duration-700 delay-300 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            NOVA — это не просто танцевальная группа. Это исследование границ человеческого тела, эмоций и пространства. Мы создаём постановки, которые невозможно забыть.
+            Мария и Дарья — танцевальный дуэт из Бирюсинска. Занимаются в Доме кино и культуры «Надежда», начинали в группе «Микс» Н.В. Волковой. В конце 2023 года создали собственный дуэт, где всё держится на взаимной договорённости и любви к танцу.
           </p>
           <p className={`font-body text-white/40 leading-relaxed transition-all duration-700 delay-400 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            За шесть лет работы мы выступили на более чем 80 сценах, от камерных залов до международных фестивалей. Наш стиль — это диалог между классикой и современностью.
+            Дебют — 18 февраля 2024 года: танец BLACKPINK «Forever Young». В 2024 году взяли 2 место на конкурсе «Подари минуту радости», а в 2025 представили собственную хореографию под песню «По горкам по горам». Их ждёт большой успех!
           </p>
         </div>
         <div className={`grid grid-cols-2 gap-4 transition-all duration-700 delay-300 ${inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}>
-          {[["80+", "Выступлений"], ["6", "Лет на сцене"], ["3", "Участника"], ["12", "Наград"]].map(([num, label]) => (
+          {[["~10", "Лет в танце"], ["2024", "Год дебюта"], ["2", "Участницы"], ["2 место", "Конкурс 2024"]].map(([num, label]) => (
             <div key={label} className="border border-white/10 p-8 hover:border-gold/50 transition-all duration-300 group">
               <p className="font-display text-5xl font-bold text-gold group-hover:scale-110 transition-transform duration-300 origin-left">{num}</p>
               <p className="font-mono text-xs tracking-[0.2em] text-white/40 uppercase mt-2">{label}</p>
@@ -242,13 +232,13 @@ function Members() {
     <section id="members" className="py-32 bg-black">
       <div className="max-w-7xl mx-auto px-6" ref={ref}>
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <p className="font-mono text-xs tracking-[0.4em] text-gold uppercase mb-4">Команда</p>
+          <p className="font-mono text-xs tracking-[0.4em] text-gold uppercase mb-4">Состав дуэта</p>
           <h2 className="font-display text-[clamp(36px,5vw,72px)] font-bold text-white leading-none">
-            УЧАСТНИКИ
+            УЧАСТНИЦЫ
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-1">
+        <div className="grid md:grid-cols-2 gap-1 max-w-3xl mx-auto">
           {MEMBERS.map((m, i) => (
             <div
               key={m.id}
@@ -360,8 +350,8 @@ function Footer() {
     <footer className="border-t border-white/10 py-16">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         <div>
-          <p className="font-display text-3xl font-bold text-gold tracking-[0.3em] mb-2">NOVA</p>
-          <p className="font-mono text-xs text-white/30 tracking-[0.2em]">ТАНЦЕВАЛЬНАЯ ГРУППА · С 2018</p>
+          <p className="font-display text-3xl font-bold text-gold tracking-[0.3em] mb-2">ОН-ЛАЙН</p>
+          <p className="font-mono text-xs text-white/30 tracking-[0.2em]">ТАНЦЕВАЛЬНЫЙ ДУЭТ · БИРЮСИНСК · С 2023</p>
         </div>
         <div className="flex gap-6">
           {["Instagram", "YouTube", "VK"].map(s => (
@@ -370,7 +360,7 @@ function Footer() {
             </button>
           ))}
         </div>
-        <p className="font-mono text-xs text-white/20 tracking-[0.1em]">© 2024 NOVA. Все права защищены</p>
+        <p className="font-mono text-xs text-white/20 tracking-[0.1em]">© 2024 Дуэт «Он-лайн». Бирюсинск</p>
       </div>
     </footer>
   );
