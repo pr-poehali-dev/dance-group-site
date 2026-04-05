@@ -55,6 +55,30 @@ const GALLERY = [
     src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/00da5ce2-e82c-4df4-aa8b-e714cd4a792b.jpg",
     caption: "За кулисами — дуэт «Он-лайн»",
   },
+  {
+    id: 6,
+    type: "photo",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/c9059f15-6305-4f2a-b653-2778c764133a.jpg",
+    caption: "Выступление — «По горкам по горам»",
+  },
+  {
+    id: 7,
+    type: "photo",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/558444f3-94bb-4bb1-a7e7-b9ffd01bbcef.jpg",
+    caption: "На сцене в народных костюмах",
+  },
+  {
+    id: 8,
+    type: "photo",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/afbc8169-e4fe-406c-9d16-7f86502f05f6.jpg",
+    caption: "Выступление дуэта",
+  },
+  {
+    id: 9,
+    type: "photo",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/aa1b4e34-0cae-4d4b-a599-b150bd7f5ec8.jpg",
+    caption: "Репетиция",
+  },
 ];
 
 const MARQUEE_WORDS = ["ДВИЖЕНИЕ", "ЭНЕРГИЯ", "РИТМ", "ОН-ЛАЙН", "БИРЮСИНСК", "ТАНЕЦ", "НАДЕЖДА", "СЦЕНА"];
