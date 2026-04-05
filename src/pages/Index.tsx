@@ -217,7 +217,7 @@ function About() {
           </p>
         </div>
         <div className={`grid grid-cols-2 gap-4 transition-all duration-700 delay-300 ${inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}>
-          {[["~10", "Лет в танце"], ["2024", "Год дебюта"], ["2", "Участницы"], ["2 место", "Конкурс 2024"]].map(([num, label]) => (
+          {[["~10", "Лет в танце"], ["2024", "Год дебюта"], ["2", "Участницы"], ["12+", "Наград"]].map(([num, label]) => (
             <div key={label} className="border border-white/10 p-8 hover:border-gold/50 transition-all duration-300 group">
               <p className="font-display text-5xl font-bold text-gold group-hover:scale-110 transition-transform duration-300 origin-left">{num}</p>
               <p className="font-mono text-xs tracking-[0.2em] text-white/40 uppercase mt-2">{label}</p>
