@@ -196,6 +196,39 @@ function Marquee() {
   );
 }
 
+function Friendship() {
+  const { ref, inView } = useInView(0.2);
+  return (
+    <section ref={ref} className="py-20 bg-black border-y border-white/5">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className={`flex flex-col md:flex-row items-center gap-10 md:gap-20 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="flex-shrink-0">
+            <div className="relative w-48 h-48 md:w-56 md:h-56">
+              <img
+                src="https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/38818009-a0c7-407a-97e7-cb4da4b3557f.jpg"
+                alt="Маша и Даша"
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute -bottom-3 -right-3 bg-gold text-black font-display font-bold text-2xl px-4 py-2 leading-none">
+                13
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className="font-mono text-xs tracking-[0.4em] text-gold uppercase mb-4">История дружбы</p>
+            <h2 className="font-display text-[clamp(28px,4vw,56px)] font-bold text-white leading-tight mb-5">
+              ВМЕСТЕ С <span className="text-gold italic">ДЕТСКОГО САДА</span>
+            </h2>
+            <p className="font-body text-white/70 text-lg leading-relaxed max-w-2xl">
+              Маша и Даша дружат уже <span className="text-gold font-semibold">13 лет</span> — с самого первого дня в детском саду. Годы шли, дружба крепла, и однажды две подруги поняли: у них одно сердце и одна страсть — танец. Именно эта дружба стала фундаментом дуэта «Он-лайн», где нет руководителя, зато есть полное доверие друг к другу.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function About() {
   const { ref, inView } = useInView();
   return (
@@ -394,6 +427,7 @@ export default function Index() {
       <Nav active={activeSection} setActive={setActiveSection} />
       <Hero />
       <Marquee />
+      <Friendship />
       <About />
       <Members />
       <Gallery />
