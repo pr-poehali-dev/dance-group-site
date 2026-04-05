@@ -9,7 +9,7 @@ const MEMBERS = [
     style: "Любительские танцы / K-pop",
     bio: "Мария родилась 11 мая 2009 года. Танцует уже почти 10 лет — начинала в группе «Микс» под руководством Н.В. Волковой. В конце 2023 года вместе с Дарьей основала дуэт «Он-лайн». Участвует в конкурсах, составляет собственные хореографии и покоряет сцены.",
     years: "Род. 11.05.2009",
-    img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/40f73bbc-9206-4350-a48d-b7afb0ee01ec.jpg",
+    img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/3fcedb28-fef8-4489-aaf3-d9fb6713092b.jpg",
     tag: "ДУЭТ",
   },
   {
@@ -19,7 +19,7 @@ const MEMBERS = [
     style: "Любительские танцы / Авторская хореография",
     bio: "Дарья родилась 11 мая 2006 года. Вместе с Марией они — настоящий творческий тандем. Прошла путь от группы «Микс» до собственного дуэта. В 2024 году дебютировала с танцем BLACKPINK, в 2025 представила авторскую хореографию на конкурсе «Подари минуту радости».",
     years: "Род. 11.05.2006",
-    img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/14baa2e7-5658-4d85-b7f6-bb52e1849f12.jpg",
+    img: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/00da5ce2-e82c-4df4-aa8b-e714cd4a792b.jpg",
     tag: "ДУЭТ",
   },
 ];
@@ -28,27 +28,32 @@ const GALLERY = [
   {
     id: 1,
     type: "photo",
-    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/b2115a3f-57f9-4426-a671-b22399b0d408.jpg",
-    caption: "Гала-концерт 2024",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/38818009-a0c7-407a-97e7-cb4da4b3557f.jpg",
+    caption: "Дуэт «Он-лайн» — фото из соц. сетей",
   },
   {
     id: 2,
     type: "photo",
-    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/719326ab-48b3-4ab2-b978-29a05b94d151.jpg",
-    caption: "Репетиция «Эхо»",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/b6bf5a11-b3d5-40e7-aa55-6a56db7290f6.jpg",
+    caption: "Образ для выступления «По горкам по горам»",
   },
   {
     id: 3,
-    type: "video",
-    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/ac9b599e-9446-42ea-96e9-0a826c6064cb.jpg",
-    caption: "Премьера «NOVA Live»",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    type: "photo",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/3fcedb28-fef8-4489-aaf3-d9fb6713092b.jpg",
+    caption: "Конкурс «Подари минуту радости»",
   },
   {
     id: 4,
     type: "photo",
-    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/ce27b0d3-2386-471a-a3d4-1e2bc175f2f5.jpg",
-    caption: "За кулисами",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/a52cd1b5-5748-44b5-a482-103231b80208.jpg",
+    caption: "За кулисами с руководителем",
+  },
+  {
+    id: 5,
+    type: "photo",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/00da5ce2-e82c-4df4-aa8b-e714cd4a792b.jpg",
+    caption: "За кулисами — дуэт «Он-лайн»",
   },
 ];
 
@@ -134,7 +139,7 @@ function Hero() {
     <section id="hero" className="relative min-h-screen flex flex-col justify-end overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/files/b2115a3f-57f9-4426-a671-b22399b0d408.jpg)` }}
+        style={{ backgroundImage: `url(https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/38818009-a0c7-407a-97e7-cb4da4b3557f.jpg)` }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
