@@ -28,7 +28,7 @@ const GALLERY = [
   {
     id: 1,
     type: "photo",
-    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/38818009-a0c7-407a-97e7-cb4da4b3557f.jpg",
+    src: "https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/ea17f1f0-311c-4b91-a9c7-fa61daa842e1.png",
     caption: "Дуэт «Он-лайн» — фото из соц. сетей",
   },
   {
@@ -163,7 +163,7 @@ function Hero() {
     <section id="hero" className="relative min-h-screen flex flex-col justify-end overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/38818009-a0c7-407a-97e7-cb4da4b3557f.jpg)` }}
+        style={{ backgroundImage: `url(https://cdn.poehali.dev/projects/f6319ffd-de81-46ec-8b17-de42b81af3bf/bucket/ea17f1f0-311c-4b91-a9c7-fa61daa842e1.png)` }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
